@@ -15,6 +15,7 @@
         rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,7 +32,7 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section>
+        <section id="about-me">
             <h2>About Me</h2>
             <p>My name is Francisco Gandiola. I am 27 years old and I was born and raised in Buenos Aires, Argentina. When I was 11, my
             family was referred to the missionaries, and I've got baptized six months later. I returned home from my mission in Lima
@@ -43,15 +44,21 @@
             <h2>Student Photo</h2>
             <img src="images/gandiola-profile.webp" alt="Francisco's old profile photo" loading="lazy">
         </section>
-        <section>
+        <section id="courses">
             <h2>Web Certificate Courses</h2>
+            <div class="course-btn">
+                <button id="all-courses">All Courses</button>
+                <button id="wdd-courses">WDD Courses</button>
+                <button id="cse-courses">CSE Courses</button>
+            </div>
+            <div class="course-list"></div>
         </section>
     </main>
     <footer>
         <div class="social">
             <a href="https://www.linkedin.com/in/francisco-lautaro-gandiola-b43a20386" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
             <a href="https://github.com/fgandiola" target="_blank"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
-            <a><img src="images/facebook.svg" alt="Facebook logo" width="16" height="16"></a>
+            <a href="https://www.facebook.com/francisco.gandiola/" target="_blank"><img src="images/facebook.svg" alt="Facebook logo" width="16" height="16"></a>
         </div>
         <p>©<span id="currentYear"></span> • Francisco Gandiola • Argentina</p>
         <p id="lastModified"></p>

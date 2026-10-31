@@ -117,10 +117,13 @@ section p {
 }
 
 #profile-photo img {
+    display: block;
     height: 300px;
     width: auto;
     margin: 10px;
     box-shadow: 0 0 5px 0;
+    justify-self: center;
+    align-self: center;
 }
 
 /* footer content */
@@ -130,5 +133,28 @@ footer {
     color: #fff;
     padding: 1rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.social a {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+}
+
+.social a:hover {
+    background-color: var(--text-color);
 }
