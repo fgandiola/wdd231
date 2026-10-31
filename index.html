@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Course Home Page | Francisco Gandiola</title>
+    <meta name="description" content="">
+    <meta name="author" content="Francisco Gandiola">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index-small.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/globe-americas.svg" alt="site logo" width="512" height="512">
+        <span>Francisco Gandiola's Site</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>My name is Francisco Gandiola. I am 27 years old and I was born and raised in Buenos Aires, Argentina. When I was 11, my
+            family was referred to the missionaries, and I've got baptized six months later. I returned home from my mission in Lima
+            about one year ago, and I've been trying to become self-reliant since then.<br>Nowadays, I am working as an in-field
+            mentor for the MTC and developing computer and programming skills. Leaving work and studies aside, I enjoy singing,
+            playing board games with friends and teaching.</p>
+        </section>
+        <section id="profile-photo">
+            <h2>Student Photo</h2>
+            <img src="images/gandiola-profile.webp" alt="Francisco's old profile photo" loading="lazy">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/francisco-lautaro-gandiola-b43a20386" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn logo" width="16" height="16"></a>
+            <a href="https://github.com/fgandiola" target="_blank"><img src="images/github.svg" alt="GitHub logo" width="16" height="16"></a>
+            <a><img src="images/facebook.svg" alt="Facebook logo" width="16" height="16"></a>
+        </div>
+        <p>©<span id="currentYear"></span> • Francisco Gandiola • Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+    </footer>
+</body>
+</html>

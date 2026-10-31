@@ -1,0 +1,134 @@
+:root {
+    --main-color: #2c2c53;
+    --secondary-color: #fcc869;
+    --text-color: #1e1e37;
+}
+
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+header, nav, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px 1fr 44px;
+    padding: 5px 0 5px 10px;
+    border-bottom: 1px solid #ddd;
+    column-gap: 8px;
+    align-items: end;
+    height: 50px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2px;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+/* hamburger button */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--main-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* navigation bar */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: var(--main-color);
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* main content */
+
+main {
+    padding: 0 10px;
+}
+
+main h1 {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+section {
+    background-color: #eee;
+}
+
+section h2 {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 4px 0;
+    text-align: center;
+}
+
+section p {
+    padding: 0 10px 10px 10px;
+    color: var(--text-color);
+}
+
+#profile-photo img {
+    height: 300px;
+    width: auto;
+    margin: 10px;
+    box-shadow: 0 0 5px 0;
+}
+
+/* footer content */
+
+footer {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
