@@ -80,12 +80,13 @@ const courses = [
     }
 ]
 
-// display
+// display list
 
 const allButton = document.querySelector('#all-courses');
 const wddButton = document.querySelector('#wdd-courses');
 const cseButton = document.querySelector('#cse-courses');
 const courseList = document.querySelector('#course-list');
+const creditSum = document.querySelector('#credits');
 
 function displayCourses(courseList, container) {
     container.innerHTML = "";
@@ -101,16 +102,28 @@ function displayCourses(courseList, container) {
     });
 };
 
-displayCourses(courses, courseList)
+calculateCredits(courses, creditSum);
+displayCourses(courses, courseList);
 
 allButton.addEventListener('click', () => {
+    calculateCredits(courses, creditSum);
     displayCourses(courses, courseList);
 });
 
 wddButton.addEventListener('click', () => {
+    calculateCredits(courses.filter(course => course.subject == 'WDD'), creditSum)
     displayCourses(courses.filter(course => course.subject == 'WDD'), courseList);
 });
 
 cseButton.addEventListener('click', () => {
+    calculateCredits(courses.filter(course => course.subject == 'CSE'), creditSum)
     displayCourses(courses.filter(course => course.subject == 'CSE'), courseList);
 });
+
+// display credits
+
+function calculateCredits(courseList, container) {
+    container.innerHTML = "";
+    const totalCredits = courseList.reduce((total, course) => total + course.credits, 0);
+    container.innerHTML = `The total number of credits for the courses listed below is ${totalCredits}`;
+};

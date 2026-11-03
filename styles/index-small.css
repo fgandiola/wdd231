@@ -207,3 +207,8 @@ footer {
     content: "\2713  ";
     font-weight: 700;
 }
+
+#credits {
+    text-align: center;
+    margin-top: 2rem;
+}
