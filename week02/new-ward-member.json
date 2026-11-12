@@ -1,0 +1,28 @@
+{
+    "familyName": "Rivera Matos",
+    "movedOn": "2026-11-11",
+    "quantity": 4,
+    "bishopVisit": true,
+    "members": [
+        {
+            "name": "Rivera Gonzales, Juan Enrique",
+            "gender": "male",
+            "birthdate": "1993-12-04"
+        },
+        {
+            "name": "Matos Herrera, Camila Aylin",
+            "gender": "female",
+            "birthdate": "1995-03-24"
+        },
+        {
+            "name": "Rivera Matos, Jessica Milagros",
+            "gender": "female",
+            "birthdate": "2005-07-04"
+        },
+        {
+            "name": "Rivera Matos, Julian Ezequiel",
+            "gender": "male",
+            "birthdate": "2013-02-28"
+        }
+    ]
+}
